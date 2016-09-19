@@ -1,0 +1,123 @@
+// ==========================================================================
+// Section Styles
+// ==========================================================================
+
+//// Game Board ////
+
+.main {
+	min-width: 450px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gameBoard {
+	background-color: $color-light;
+	border: double $color-primary 5px;
+	border-radius: 50%;
+	height: 450px;
+	margin: auto;
+	margin-top: 165px;
+	padding: 10px;
+	position: relative;
+	width: 450px;
+}
+
+#red, #blue, #green, #yellow {
+	border: 5px double $color-light;
+	height: 210px;
+	width: 210px;
+}
+
+#red {
+	background-color: $color-red;
+	border-top-left-radius: 100%;
+
+	&.red-flash {
+		background-color: $pink-flash;
+	}
+}
+
+#blue {
+	background-color: $color-blue;
+	border-top-right-radius: 100%;
+
+	&.blue-flash {
+		background-color: $blue-flash;
+	}
+}
+
+#green {
+	background-color: $color-green;
+	border-bottom-left-radius: 100%;
+
+	&.green-flash {
+		background-color: $green-flash;
+	}
+}
+
+#yellow {
+	background-color: $color-yellow;
+	border-bottom-right-radius: 100%;
+
+	&.yellow-flash {
+		background-color: $yellow-flash;
+	}
+}
+
+#center-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: double $color-primary 5px;
+	background-color: $color-light;
+	text-align: center;
+	z-index: 5;
+
+	.name {
+		padding-top: 20%;
+		@extend %text-shadow;
+		font-size: 36px;
+		color: $color-primary;
+
+	}
+
+	#start, #reset {
+		display: inline-block;
+	}
+}
+
+//// Scores ////
+.score div {
+	text-align: center;
+
+	p {
+		background-color: $color-secondary;
+		color: $color-light;
+		@extend %text-shadow;
+		border: double $color-light 3px;
+	    padding: 2%;
+	    border-radius: 6px;
+
+	    @media (min-width: 765px) {
+	    	margin-left: 125px;
+	    	margin-right: 125px;
+	    }
+	}
+}
+
+
+
+
+
+

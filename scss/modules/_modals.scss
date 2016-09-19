@@ -1,0 +1,29 @@
+// ==========================================================================
+// Modal Styles
+// ==========================================================================
+
+.modal-body p {
+   	color: $color-primary; 
+
+   		a {
+   			color: $color-red;
+
+   			&:hover {
+	      		color: $color-yellow;
+	      		text-decoration: none;
+	    	}
+   		}
+} 
+
+.modal-footer button {
+   	border-radius:4px;
+   	border-color: $color-primary;
+   	color: $color-primary;
+   
+   	&:hover {
+       	background-color: $color-primary;
+       	border-color: $color-primary;
+       	color: $color-light;
+    }
+
+}

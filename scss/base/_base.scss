@@ -1,0 +1,54 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    font-family: $font-family--primary;
+    background-color: $color-primary;
+    background: url('../img/Catch the Wave_Pattern 2_by Stella.png') repeat repeat;
+    background-size: cover; 
+    margin-bottom: 60px;
+}
+////url('../img/perfect-purple-abstract-background-hd.jpg') no-repeat center center
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-family--primary;
+    color: $color-secondary;
+}
+
+p {
+    font-family: $font-family--secondary;
+    color: $color-light;
+}
+
+body > .container-fluid {
+    padding: 60px 15px 0;
+}
+.container-fluid .text-muted {
+    margin: 20px 0;
+}
+
+//Get rid of bootstrap link/button outline after click
+.btn:focus, a:focus, .btn-info:focus, .btn-warning:focus {
+    outline: none !important;
+}
+
+
+

@@ -1,0 +1,119 @@
+// ==========================================================================
+// Navbar Styles
+// ==========================================================================
+
+.navbar {
+    height: 70px;
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    color: $color-primary;
+    z-index: 100;
+    margin-bottom: 0;
+    border-radius: 0;
+    transition: background-color 1s ease 0s;
+}
+
+.navbar-default {
+  
+    .navbar-brand {
+        // display: none; - unncomment if using transition navbar
+        margin-top: 10px;
+        color: $color-primary;
+        font-weight: bold;
+        @extend %text-shadow;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .navbar-nav {
+    
+        > li {
+      
+            > a {
+                color: $color-primary;
+                font-weight: bold;
+                @extend %text-shadow;
+                font-size: 28px;
+                text-transform: lowercase;
+                margin: 10px 5px 5px 5px;
+                border-radius: $br--default;
+            }
+      
+            > a:hover, > a:active, > a:focus {
+                color: $color-primary;
+                border: 1px solid $color-primary;
+            }
+        
+            > a:visited {
+                color: $color-primary;
+                text-decoration: none;
+            }
+
+        } //end li
+
+        > .active {
+
+            > a, > a:hover, > a:focus {
+                background-color: transparent;
+                color: $color-primary;
+            }
+
+        }
+
+    } //end .navbar-nav
+
+    //Collapsed styles
+    .navbar-toggle {
+        border-color: $color-primary;
+
+        &:hover, &:focus {
+            background-color: $color-primary;
+        }
+
+        .icon-bar {
+            color: $color-light;
+            background-color: $color-primary;
+        }
+    }
+
+    .navbar-collapse.collapse.in ul {
+        background-color: $color-light;
+    }
+    
+} //end .navbar-default
+
+
+// Transition Navbar Styles
+/* .solid class attached on scroll past first section */
+
+// .navbar.solid {
+//     background-color: $color-secondary;
+//     transition: background-color 1s ease 0s;
+//     box-shadow: 0 0 4px $color-shadow;
+
+//     .navbar-brand {
+//         display: inline-block;
+//         color: $color-light;
+//         transition: color 1s ease 0s;
+//     }
+
+//     .navbar-nav {
+
+//         > li {
+
+//             > a {
+//                 color: $color-light;
+//                 transition: color 1s ease 0s;
+//             }
+
+//         } //end li
+
+//     } //end .navbar-nav
+// }
+
+
+
+
